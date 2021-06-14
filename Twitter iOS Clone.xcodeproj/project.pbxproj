@@ -12,6 +12,10 @@
 		0B63851A267431F90093C8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B638519267431F90093C8BA /* Assets.xcassets */; };
 		0B63851D267431F90093C8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B63851B267431F90093C8BA /* LaunchScreen.storyboard */; };
 		0BE8F33D26780F7000952836 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8F33C26780F7000952836 /* MainTabController.swift */; };
+		0BE8F3402678118200952836 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8F33F2678118200952836 /* FeedController.swift */; };
+		0BE8F3432678126200952836 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8F3422678126200952836 /* ExploreController.swift */; };
+		0BE8F3472678128300952836 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8F3462678128300952836 /* NotificationsController.swift */; };
+		0BE8F34A267812A000952836 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8F349267812A000952836 /* MessagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0B63851C267431F90093C8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B63851E267431F90093C8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE8F33C26780F7000952836 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		0BE8F33F2678118200952836 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		0BE8F3422678126200952836 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		0BE8F3462678128300952836 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		0BE8F349267812A000952836 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				0BE8F33C26780F7000952836 /* MainTabController.swift */,
+				0BE8F33F2678118200952836 /* FeedController.swift */,
+				0BE8F3422678126200952836 /* ExploreController.swift */,
+				0BE8F3462678128300952836 /* NotificationsController.swift */,
+				0BE8F349267812A000952836 /* MessagesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE8F3472678128300952836 /* NotificationsController.swift in Sources */,
 				0B638511267431F70093C8BA /* AppDelegate.swift in Sources */,
 				0B638513267431F70093C8BA /* SceneDelegate.swift in Sources */,
+				0BE8F34A267812A000952836 /* MessagesController.swift in Sources */,
+				0BE8F3432678126200952836 /* ExploreController.swift in Sources */,
 				0BE8F33D26780F7000952836 /* MainTabController.swift in Sources */,
+				0BE8F3402678118200952836 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
