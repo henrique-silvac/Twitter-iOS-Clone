@@ -34,7 +34,7 @@ class MainTabController: UITabBarController {
         let nav3 = templateNavigationController(image: UIImage(named: "like_unselected"), rootViewController: notifications)
         
         let messages = MessagesController()
-        let nav4 = templateNavigationController(image: UIImage(named: "like_unselected"), rootViewController: messages)
+        let nav4 = templateNavigationController(image: UIImage(named: "ic_mail_outline_white_2x-1"), rootViewController: messages)
         
         viewControllers = [nav1, nav2, nav3, nav4]
         
