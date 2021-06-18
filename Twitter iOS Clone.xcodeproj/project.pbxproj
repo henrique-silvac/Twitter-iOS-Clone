@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B379B99267D3549006A6E11 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B98267D3549006A6E11 /* LoginController.swift */; };
+		0B379B9C267D35FE006A6E11 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B9B267D35FE006A6E11 /* RegistrationController.swift */; };
 		0B638511267431F70093C8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B638510267431F70093C8BA /* AppDelegate.swift */; };
 		0B638513267431F70093C8BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B638512267431F70093C8BA /* SceneDelegate.swift */; };
 		0B63851A267431F90093C8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B638519267431F90093C8BA /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B379B98267D3549006A6E11 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0B379B9B267D35FE006A6E11 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		0B63850D267431F70093C8BA /* Twitter iOS Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter iOS Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B638510267431F70093C8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B638512267431F70093C8BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B379B97267D3528006A6E11 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0B379B98267D3549006A6E11 /* LoginController.swift */,
+				0B379B9B267D35FE006A6E11 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		0B638504267431F70093C8BA = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		0B638528267432690093C8BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0B379B97267D3528006A6E11 /* Authentication */,
 				0BE8F33C26780F7000952836 /* MainTabController.swift */,
 				0BE8F33F2678118200952836 /* FeedController.swift */,
 				0BE8F3422678126200952836 /* ExploreController.swift */,
@@ -200,6 +214,8 @@
 				0B638511267431F70093C8BA /* AppDelegate.swift in Sources */,
 				0B638513267431F70093C8BA /* SceneDelegate.swift in Sources */,
 				0BC20065267C09D100AC3EAC /* Extensions.swift in Sources */,
+				0B379B99267D3549006A6E11 /* LoginController.swift in Sources */,
+				0B379B9C267D35FE006A6E11 /* RegistrationController.swift in Sources */,
 				0BE8F34A267812A000952836 /* MessagesController.swift in Sources */,
 				0BE8F3432678126200952836 /* ExploreController.swift in Sources */,
 				0BE8F33D26780F7000952836 /* MainTabController.swift in Sources */,
