@@ -41,4 +41,23 @@ class Utilities {
         return tf
     }
     
+    func attributedButton(_ firstPart: String, _ secondPart: String) -> UIButton {
+        let button = UIButton(type: .system)
+        
+        let yourAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16)]
+        let yourOtherAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)]
+
+        let firstPart = NSMutableAttributedString(string: firstPart, attributes: yourAttributes)
+        let secondPart = NSMutableAttributedString(string: secondPart, attributes: yourOtherAttributes)
+
+        let combination = NSMutableAttributedString()
+
+        combination.append(firstPart)
+        combination.append(secondPart)
+        
+        button.setAttributedTitle(combination, for: .normal)
+        
+        return button
+    }
+    
 }
