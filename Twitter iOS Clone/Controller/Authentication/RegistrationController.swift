@@ -111,30 +111,14 @@ class RegistrationController: UIViewController {
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text else { return }
-        guard let imageData = profileImage.jpegData(compressionQuality: 0.3) else {return}
         
-        let filename = NSUUID().uuidString
-        let storageRef = STORAGE_PROFILE_IMAGES.child(filename)
+        let credentials = AuthCredentials(email: email, password: password, fullname: fullname, username: username, profileImage: profileImage)
         
-        storageRef.putData(imageData, metadata: nil) { (meta, error) in
-            storageRef.downloadURL { (url, error) in
-                guard let profileImageUrl = url?.absoluteString else { return }
-                
-                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                    if let error = error {
-                        print("DEBUG: Error is\(error.localizedDescription)")
-                        return
-                    }
-                    guard let uid = result?.user.uid else { return }
-                    
-                    let values = ["email": email, "username": username, "fullnamed": fullname]
-                    
-                    REF_USER.child(uid).updateChildValues(values) { (error, ref) in
-                        print("DEBUG: Succesffully update user information...")
-                    }
-                }
-            }
+        AuthService.shared.registerUser(credencials: credentials) { (error, ref) in
+            print("DEBUG: Sign uo successful...")
+            print("DEBUG: Handle update user interface here...")
         }
+        
     }
     
     @objc func handleShowSignUp(){
@@ -179,7 +163,7 @@ extension RegistrationController: UIImagePickerControllerDelegate, UINavigationC
         plusPhotoButton.layer.masksToBounds = true
         plusPhotoButton.layer.borderColor = UIColor.white.cgColor
         plusPhotoButton.layer.borderWidth = 3
-        plusPhotoButton.imageView?.contentMode = .scaleAspectFit
+        plusPhotoButton.imageView?.contentMode = .scaleAspectFill
         plusPhotoButton.imageView?.clipsToBounds = true
         
         self.plusPhotoButton.setImage(profileImage.withRenderingMode(.alwaysOriginal), for: .normal)
