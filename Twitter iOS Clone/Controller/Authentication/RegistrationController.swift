@@ -25,25 +25,21 @@ class RegistrationController: UIViewController {
     
     private lazy var emailContainerView: UIView = {
         let view = Utilities().inputContainerView(withImage: #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), textField: emailTextField)
-        
         return view
     }()
     
     private lazy var passwordContainerView: UIView = {
         let view = Utilities().inputContainerView(withImage: #imageLiteral(resourceName: "ic_lock_outline_white_2x"), textField: passwordTextField)
-
         return view
     }()
     
     private lazy var fullnameContainerView: UIView = {
         let view = Utilities().inputContainerView(withImage: #imageLiteral(resourceName: "ic_person_outline_white_2x"), textField: fullnameTextField)
-
         return view
     }()
     
     private lazy var usernameContainerView: UIView = {
         let view = Utilities().inputContainerView(withImage: #imageLiteral(resourceName: "ic_person_outline_white_2x"), textField: usernameTextField)
-
         return view
     }()
     
@@ -115,10 +111,13 @@ class RegistrationController: UIViewController {
         let credentials = AuthCredentials(email: email, password: password, fullname: fullname, username: username, profileImage: profileImage)
         
         AuthService.shared.registerUser(credencials: credentials) { (error, ref) in
-            print("DEBUG: Sign uo successful...")
-            print("DEBUG: Handle update user interface here...")
+            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow}) else {return}
+            guard let tab = window.rootViewController as? MainTabController else {return}
+            
+            tab.authenticateUserAndConfigureUI()
+            
+            self.dismiss(animated: true, completion: nil)
         }
-        
     }
     
     @objc func handleShowSignUp(){
