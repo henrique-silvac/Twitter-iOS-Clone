@@ -20,6 +20,10 @@ struct AuthCredentials {
 struct AuthService {
     static let shared = AuthService()
     
+    func logUser(withEmail email: String, password: String, completion: AuthDataResultCallback?) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+    }
+    
     func registerUser(credencials: AuthCredentials, completion: @escaping(Error? , DatabaseReference) -> Void) {
         
         let email = credencials.email
@@ -43,7 +47,7 @@ struct AuthService {
                     }
                     guard let uid = result?.user.uid else { return }
                     
-                    let values = ["email": email, "username": username, "fullnamed": fullname]
+                    let values = ["email": email, "username": username, "fullnamed": fullname, "profileImageUrl": profileImageUrl]
                     
                     REF_USER.child(uid).updateChildValues(values) { (error, ref) in
                         print("DEBUG: Succesffully update user information...")
