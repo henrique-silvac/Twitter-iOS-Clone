@@ -25,13 +25,16 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //logUserOut()
         authenticateUserAndConfigureUI()
         
     }
     
     //MARK: - API
+    
+    func fetchUser() {
+        UserService.shared.fethUser()
+    }
     
     func authenticateUserAndConfigureUI() {
         if Auth.auth().currentUser == nil {
@@ -43,6 +46,7 @@ class MainTabController: UITabBarController {
         } else {
             configureViewController()
             configureUI()
+            fetchUser()
         }
     }
     

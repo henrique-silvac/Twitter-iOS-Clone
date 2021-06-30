@@ -59,5 +59,4 @@ class Utilities {
         
         return button
     }
-    
 }
