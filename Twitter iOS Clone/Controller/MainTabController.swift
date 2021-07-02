@@ -42,7 +42,7 @@ class MainTabController: UITabBarController {
     //MARK: - API
     
     func fetchUser() {
-        UserService.shared.fethUser { (user) in
+        UserService.shared.fetchUser { user in
             self.user = user
         }
     }
@@ -73,19 +73,15 @@ class MainTabController: UITabBarController {
     //MARK: - Selectors
     
     @objc func actionButtonTapped() {
-        print(123)
+        let nav = UINavigationController(rootViewController: UploadTweetController())
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
     
     //MARK: - Helpers
     
     func configureUI() {
         view.addSubview(actionButton)
-//        actionButton.translatesAutoresizingMaskIntoConstraints = false
-//        actionButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
-//        actionButton.widthAnchor.constraint(equalToConstant: 56).isActive = true
-//        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -64).isActive = true
-//        actionButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-//        actionButton.layer.cornerRadius = 56/2
         actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
         actionButton.layer.cornerRadius = 56 / 2
     }
