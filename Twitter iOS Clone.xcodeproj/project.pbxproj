@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B0CC0C4268F58F000462A48 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CC0C3268F58F000462A48 /* UploadTweetController.swift */; };
 		0B0CC0C7268F63F800462A48 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CC0C6268F63F800462A48 /* CaptionTextView.swift */; };
+		0B0CC0D2268F6CCC00462A48 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CC0D1268F6CCC00462A48 /* TweetService.swift */; };
 		0B379B99267D3549006A6E11 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B98267D3549006A6E11 /* LoginController.swift */; };
 		0B379B9C267D35FE006A6E11 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B9B267D35FE006A6E11 /* RegistrationController.swift */; };
 		0B485375268A57EA00DD1B19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485374268A57EA00DD1B19 /* Constants.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		0B0CC0C3268F58F000462A48 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		0B0CC0C6268F63F800462A48 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		0B0CC0D1268F6CCC00462A48 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		0B379B98267D3549006A6E11 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0B379B9B267D35FE006A6E11 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		0B485374268A57EA00DD1B19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				0B485377268A620100DD1B19 /* AuthService.swift */,
 				0BE721C0268D08A6009277B8 /* UserService.swift */,
+				0B0CC0D1268F6CCC00462A48 /* TweetService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				0BE8F33D26780F7000952836 /* MainTabController.swift in Sources */,
 				0BE8F3402678118200952836 /* FeedController.swift in Sources */,
 				0B485375268A57EA00DD1B19 /* Constants.swift in Sources */,
+				0B0CC0D2268F6CCC00462A48 /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
