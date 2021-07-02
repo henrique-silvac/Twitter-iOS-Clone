@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B0CC0C4268F58F000462A48 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CC0C3268F58F000462A48 /* UploadTweetController.swift */; };
+		0B0CC0C7268F63F800462A48 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CC0C6268F63F800462A48 /* CaptionTextView.swift */; };
 		0B379B99267D3549006A6E11 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B98267D3549006A6E11 /* LoginController.swift */; };
 		0B379B9C267D35FE006A6E11 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B379B9B267D35FE006A6E11 /* RegistrationController.swift */; };
 		0B485375268A57EA00DD1B19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B485374268A57EA00DD1B19 /* Constants.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0B0CC0C3268F58F000462A48 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
+		0B0CC0C6268F63F800462A48 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
 		0B379B98267D3549006A6E11 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0B379B9B267D35FE006A6E11 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		0B485374268A57EA00DD1B19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		0B63852A267432700093C8BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B0CC0C6268F63F800462A48 /* CaptionTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				0BE721C1268D08A6009277B8 /* UserService.swift in Sources */,
 				0BE8F3472678128300952836 /* NotificationsController.swift in Sources */,
+				0B0CC0C7268F63F800462A48 /* CaptionTextView.swift in Sources */,
 				0B638511267431F70093C8BA /* AppDelegate.swift in Sources */,
 				0BDD2D5726815F9700A0BF8C /* Utilities.swift in Sources */,
 				0B638513267431F70093C8BA /* SceneDelegate.swift in Sources */,
