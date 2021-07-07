@@ -10,9 +10,9 @@ import Foundation
 struct User {
     let email: String
     let fullname: String
+    var profileImageUrl: URL?
     let username: String
     let uid: String
-    var profileImageUrl: URL?
     
     init(uid: String, dictionary: [String: AnyObject]) {
         self.uid = uid
